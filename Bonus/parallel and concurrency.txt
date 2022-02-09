@@ -1,0 +1,12 @@
+concurency adalah perhitungan yang berjalan dalam satu waktu, jadi tidak menunggu satu sama lain. misal dalam sebuah restaurant pelanggan pertama memesan nasi goreng, lalu pelanggan kedua memesan teh manis. Maka proses membuat kedua sajian tersebut berjalan secara bersamaan tidak harus menunggu yang satu selesai, kalau teh manisnya sudah jadi maka sajikan dulu baru nasi gorengnya.
+
+contoh concurrent:
+console.log('hi');
+
+setTimeout(function() {
+     console.log('freecodeCamp')
+},2000);
+
+console.log('JS')
+
+parallel adalah perhitungan yang dimulai dan berjalan bersamaan, berbeda dengan concurrency dimana mulai perhitungannya tidak harus bersamaan.

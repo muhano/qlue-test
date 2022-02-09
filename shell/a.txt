@@ -1,0 +1,4 @@
+create a single line script that return the number of httpd process that run on current machine
+
+answer:
+ps axu | wc -l

@@ -1,0 +1,29 @@
+1.) Total price from the items transaction. Answer: 
+
+SELECT p."name", SUM(CAST(i."price" AS integer) * t."total") as total_price   FROM "transactions" t
+JOIN "persons" p 
+ON t."person_id" = p.id 
+JOIN "items" i 
+ON t."item_id" = i.id
+GROUP BY p."name";
+
+
+2.) Transaction of items between January 1st, 2020 and June 25th, 2020. Answer:
+
+SELECT p."name", i."name", t."date"   FROM "transactions" t
+JOIN "persons" p 
+ON t."person_id" = p.id 
+JOIN "items" i 
+ON t."item_id" = i.id
+WHERE t."date" BETWEEN '2020-01-01' AND '2020-06-25';
+
+
+3.) Variety of items purchased, sorted from the most to the fewest. Answer:
+
+SELECT p."name", count(i."name") AS variety   FROM "transactions" t
+JOIN "persons" p 
+ON t."person_id" = p.id 
+JOIN "items" i 
+ON t."item_id" = i.id
+GROUP BY p."name"
+ORDER BY variety DESC;

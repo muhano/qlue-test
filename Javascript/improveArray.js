@@ -1,3 +1,5 @@
+//change format of a JSON data
+
 function improveArray(array) {
     let result = {h: [], d: []}
     let tempArray = []

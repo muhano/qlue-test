@@ -1,3 +1,5 @@
+//find all sets of numbers that sum up to n
+
 function algorithmicRec(target, current_sum, start, result, output) {
     if (current_sum === target) {
         output.push(result.slice());

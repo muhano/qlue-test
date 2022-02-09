@@ -25,13 +25,3 @@ function algorithmic(target) {
 let n = 5;
 console.log(algorithmic(n));
 
-// function algorithmic(input) {
-//     let number = input
-//     while (number !== 0) {
-//         number-1
-//     }
-// }
-
-// const input = 4
-
-// console.log(algorithmic(input)); 
